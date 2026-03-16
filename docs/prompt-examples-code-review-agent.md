@@ -4,7 +4,8 @@ Ready-to-use prompts for the **Code Review** AI Core.
 This core is powered by the **code-reviewer** agent and **6 specialized skills**.
 
 > **How to use**: Copy any prompt below and paste it into your AI coding assistant.
-> The agent will automatically trigger its review pipeline, running specialists in parallel to produce a consolidated report.
+> The agent is triggered by **natural language intent only** — there is no `/code-review` slash command.
+> Describe what you want reviewed and the agent will automatically trigger its review pipeline, running specialists in parallel to produce a consolidated report.
 
 ---
 

@@ -60,7 +60,7 @@ The `description` field is the most important piece — it's the only thing the 
 4. **Injection** — The full `SKILL.md` body and the skill's directory path are loaded into the conversation. The agent can now read any bundled files.
 5. **Execution** — The agent follows the skill's procedural guidance to complete your task.
 
-You can also invoke a skill directly with a slash command: `/skill-name`.
+Natural language intent is the primary activation path — write a request that matches the skill's description and the agent activates it automatically. Some tools also support direct slash command invocation (`/skill-name`), but this is optional; many skills, including those in the SDLC AI Cores, are designed to be triggered by intent alone.
 
 ### What skills are good for
 
@@ -193,7 +193,9 @@ When reviewing code:
 Report findings clearly with file and line references.
 ```
 
-Run `/skills reload` and test it: *"Review the changes in src/auth.js."*
+Run `/skills reload` and test it with natural language: *"Review the changes in src/auth.js."*
+
+> **Note:** This skill — like all skills — is designed to be triggered by natural language intent, not a slash command. The `name` field sets the skill's identity; the `description` field is what the agent reads to decide whether to activate it. Writing a clear, intent-based description is what makes natural-language triggering reliable.
 
 ### Enabling Subagents (Experimental)
 

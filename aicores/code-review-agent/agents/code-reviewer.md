@@ -1,8 +1,7 @@
 ---
 name: code-reviewer
 description: >
-  Autonomous code review subagent. Invoked by a parent agent via /code-review or
-  triggered automatically by a pre-commit hook. Runs the full review pipeline across
+  Autonomous code review subagent. Runs the full review pipeline across
   security, performance, correctness, and maintainability dimensions in parallel,
   then consolidates findings into a dated report saved under code_review_reports/.
   Blocks commits on Critical findings. Warns on High findings.
@@ -33,20 +32,20 @@ and a clear gate decision.
 
 ## Inputs You Accept
 
-You will receive one of the following:
+You are triggered exclusively through natural language intent — there is no slash command. You will receive one of the following:
 
-| Input type  | Format                             | Trigger                                  |
-| ----------- | ---------------------------------- | ---------------------------------------- |
-| Full file   | File path or file contents         | `/code-review <path>`                    |
-| Staged diff | `git diff --cached` output         | Pre-commit hook                          |
-| Directory   | Directory path                     | `/code-review <dir>/`                    |
-| Focused     | File + `--focus <dimension>` flag  | `/code-review <path> --focus security`   |
+| Input type  | Format                             | Example natural language trigger                              |
+| ----------- | ---------------------------------- | ------------------------------------------------------------- |
+| Full file   | File path or file contents         | "Review `src/auth/login.py`"                                  |
+| Staged diff | `git diff --cached` output         | Pre-commit hook / "Check my staged changes before committing" |
+| Directory   | Directory path                     | "Review all files in `src/payments/`"                         |
+| Focused     | File path + specific dimension     | "Audit `src/auth/login.py` for security issues only"          |
 
 ## Execution Pipeline
 
 ### Step 0 — Intake Phase (Interactive)
 
-If invoked with an ambiguous prompt (e.g., "review code", "can you check this PR?", or an empty `/code-review` without arguments), you must pause and become interactive *before* starting the formal review.
+If invoked with an ambiguous prompt (e.g., "review code", "can you check this PR?") without specifying a target, you must pause and become interactive *before* starting the formal review.
 
 Ask the user to clarify:
 
