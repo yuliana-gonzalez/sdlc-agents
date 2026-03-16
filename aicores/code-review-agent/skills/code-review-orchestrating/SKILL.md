@@ -4,8 +4,8 @@ description: >
   Entry point for full code reviews across all dimensions. Trigger this skill when the
   user asks for a complete code review, "review my PR", "review this file", "check my
   code before merge", or any general review request without a specific focus area.
-  This orchestrator coordinates the Security, Performance, Correctness, and Maintainability
-  specialist skills and synthesizes their outputs into a single actionable report.
+  This orchestrator coordinates the Security (via security-agent), Performance, Correctness,
+  and Maintainability specialist skills and synthesizes their outputs into a single actionable report.
   For focused single-dimension reviews, the specialist skills can trigger directly.
 ---
 
@@ -21,11 +21,11 @@ Identify:
 - Any explicit focus areas the user mentioned
 
 ## Step 2 — Invoke Specialists
-Run each specialist skill in turn (or in parallel mentally for large diffs):
+Run each specialist in turn (or in parallel mentally for large diffs):
 
-| Skill | Trigger |
+| Specialist | Trigger |
 |---|---|
-| `code-review-securing` | Always |
+| `security-agent` (external AI Core) | Always |
 | `code-review-optimizing` | Always |
 | `code-review-validating` | Always |
 | `code-review-refactoring` | Always |
@@ -48,7 +48,7 @@ After all four specialists complete, produce the unified report:
 [2–4 genuine positives — always lead here]
 
 ### 🔒 Security     — [score]/10
-[Top findings from code-review-securing]
+[Top findings from security-agent]
 
 ### ⚡ Performance  — [score]/10
 [Top findings from code-review-optimizing]

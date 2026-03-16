@@ -32,6 +32,7 @@ git diff --cached > "$DIFF_TMP"
 mkdir -p "$REPORT_DIR/full" "$REPORT_DIR/securing" \
          "$REPORT_DIR/optimizing" "$REPORT_DIR/validating" \
          "$REPORT_DIR/refactoring"
+# Note: $REPORT_DIR/securing is written by the security-agent AI Core
 
 # ---------------------------------------------------------------------------
 # Invoke the subagent — replace with your runtime's invocation

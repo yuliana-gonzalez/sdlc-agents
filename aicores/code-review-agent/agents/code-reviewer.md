@@ -12,7 +12,6 @@ tools:
   - list_directory
 
 skills:
-  - code-review-securing
   - code-review-optimizing
   - code-review-validating
   - code-review-refactoring
@@ -85,14 +84,17 @@ Pass the context summary forward to all specialists.
 
 ### Step 3 — Parallel Specialist Execution
 
-Spawn all 4 specialists concurrently (or only the one specified by `--focus`):
+Spawn all specialists concurrently (or only the one specified by `--focus`):
 
 ```text
-code-review-securing    →  code_review_reports/securing/YYYY-MM-DD_<slug>.md
+security-agent          →  code_review_reports/securing/YYYY-MM-DD_<slug>.md
 code-review-optimizing  →  code_review_reports/optimizing/YYYY-MM-DD_<slug>.md
 code-review-validating  →  code_review_reports/validating/YYYY-MM-DD_<slug>.md
 code-review-refactoring →  code_review_reports/refactoring/YYYY-MM-DD_<slug>.md
 ```
+
+> Security analysis is delegated to the `security-agent` AI Core, which provides
+> OWASP Top 10, NIST SSDF, and ASVS 5.0 coverage.
 
 Each specialist saves its own dimension report and returns:
 
@@ -106,7 +108,7 @@ Invoke `code-review-orchestrating` to merge all specialist outputs:
 
 - De-duplicate findings that share the same root cause and line
 - Escalate severity when findings from multiple dimensions compound
-- Compute weighted overall score (securing 35%, validating 30%, optimizing 20%, refactoring 15%)
+- Compute weighted overall score (security-agent 35%, validating 30%, optimizing 20%, refactoring 15%)
 - Produce the final recommendation: `APPROVE` / `APPROVE WITH COMMENTS` / `REQUEST CHANGES` / `BLOCK`
 
 Save consolidated report:
@@ -133,7 +135,7 @@ Print the gate banner to stdout:
 ║  Critical: 1  High: 2  Medium: 3  Low: 1     ║
 ║                                              ║
 ║  Blocking issues:                            ║
-║  🔴 [securing]   SQL injection — L42         ║
+║  🔴 [security]   SQL injection — L42          ║
 ║  🔴 [validating] Race condition — L88–94     ║
 ║                                              ║
 ║  Full report:                                ║
