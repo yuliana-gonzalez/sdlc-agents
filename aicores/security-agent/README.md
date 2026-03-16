@@ -275,13 +275,13 @@ Reference: `skills/devsec-reviewing-code-for-security/references/cwe-mitre.md`
 ### Install the full AI Core (all agents)
 
 ```bash
-npx agents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/security-agent -a gemini
+npx aicores add https://github.com/wizeline/sdlc-agents/tree/main/aicores/security-agent -a gemini
 ```
 
 ### Install a single agent
 
 ```bash
-npx agents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/security-agent/agents/devsec-code-review -a gemini
+npx subagents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/security-agent/agents/devsec-code-review -a gemini
 ```
 
 ### Install a single skill

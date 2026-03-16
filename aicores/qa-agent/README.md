@@ -28,5 +28,5 @@ This AI Core is in the **Inception** phase. Agents and skills are being designed
 Check back once this AI Core is released. Installation will follow the standard pattern:
 
 ```bash
-npx agents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/qa-agent -a gemini
+npx aicores add https://github.com/wizeline/sdlc-agents/tree/main/aicores/qa-agent -a gemini
 ```

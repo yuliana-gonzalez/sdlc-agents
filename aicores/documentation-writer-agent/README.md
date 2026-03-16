@@ -358,7 +358,7 @@ npx aicores add https://github.com/wizeline/sdlc-agents/tree/main/aicores/docume
 ### Install a single agent
 
 ```bash
-npx agents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/documentation-writer-agent/agents/doc-engineer
+npx subagents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/documentation-writer-agent/agents/doc-engineer
 ```
 
 ### Install a single skill

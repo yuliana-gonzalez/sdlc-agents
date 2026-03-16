@@ -312,12 +312,12 @@ ambiguities.md                    ← unclear or incomplete requirements
 
 ### Install the full AI Core (all agents)
 ```bash
-npx agents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/unit-testing-agent -a gemini
+npx aicores add https://github.com/wizeline/sdlc-agents/tree/main/aicores/unit-testing-agent -a gemini
 ```
 
 ### Install a single agent
 ```bash
-npx agents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/unit-testing-agent/agents/test-unit-gen-agent -a gemini
+npx subagents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/unit-testing-agent/agents/test-unit-gen-agent -a gemini
 ```
 
 ### Install a single skill

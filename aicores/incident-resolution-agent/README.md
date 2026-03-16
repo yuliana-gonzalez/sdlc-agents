@@ -233,19 +233,19 @@ incident-triaging → incident-documenting [Jira ticket only]
 ### Install the full AI Core (all agents)
 
 ```bash
-npx aicore-cli add https://github.com/wizeline/sdlc-agents/tree/main/aicores/incident-resolution-agent
+npx aicores add https://github.com/wizeline/sdlc-agents/tree/main/aicores/incident-resolution-agent
 ```
 
 ### Install a single agent
 
 ```bash
-npx aicore-cli add https://github.com/wizeline/sdlc-agents/tree/main/aicores/incident-resolution-agent/agents/incident-commander-agent
+npx subagents add https://github.com/wizeline/sdlc-agents/tree/main/aicores/incident-resolution-agent/agents/incident-commander-agent
 ```
 
 ### Install a single skill
 
 ```bash
-npx aicore-cli add https://github.com/wizeline/sdlc-agents/tree/main/aicores/incident-resolution-agent/skills/incident-triaging
+npx skills add https://github.com/wizeline/sdlc-agents/tree/main/aicores/incident-resolution-agent/skills/incident-triaging
 ```
 
 ---
