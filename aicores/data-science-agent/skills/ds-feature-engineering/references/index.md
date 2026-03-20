@@ -27,5 +27,5 @@ Covers feature selection methods with selection criteria:
 ---
 
 ## Who Reads This
-Every feature engineering skill step and every ds-feature-eng-agent invocation
+Every feature engineering skill step and every ds-feature-engineering-agent invocation
 loads this index as its first action. Reading order is fixed — do not skip.

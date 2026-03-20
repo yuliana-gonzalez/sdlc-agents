@@ -12,7 +12,7 @@ The **Data Science Agent** accelerates every phase of the data science lifecycle
 data-science-agent/
 ├── agents/
 │   ├── ds-eda-agent.md               ← Exploratory Data Analysis: profiling, distributions, correlations
-│   ├── ds-feature-eng-agent.md       ← Feature Engineering: encoding, scaling, selection, leakage detection
+│   ├── ds-feature-engineering-agent.md ← Feature Engineering: encoding, scaling, selection, leakage detection
 │   ├── ds-model-eval-agent.md        ← Model Evaluation: metrics, validation strategy, bias & fairness
 │   └── ds-pipeline-review-agent.md   ← Data Pipeline Review: quality, leakage, reproducibility
 └── skills/
@@ -58,7 +58,7 @@ data-science-agent/
 
 ---
 
-### `ds-feature-eng-agent`
+### `ds-feature-engineering-agent`
 
 **Description:** Reviews or designs a feature engineering strategy. Detects data leakage, recommends encoding and scaling approaches, and produces a feature catalog with transformation rationale.
 

@@ -1,7 +1,7 @@
 # Feature Engineering Report — [Dataset / Project Name]
 
 **Date:** [YYYY-MM-DD]
-**Agent:** ds-feature-eng-agent
+**Agent:** ds-feature-engineering-agent
 **Problem Type:** [binary classification | multi-class | regression | clustering | time-series]
 **Target Variable:** [column name or "None"]
 **Algorithm Family:** [tree-based | linear | distance-based | neural network | mixed]

@@ -5,6 +5,8 @@ description: >
   validates the evaluation strategy for leakage and correctness, diagnoses
   overfitting and underfitting, and runs a structured bias and fairness audit.
   Produces a model evaluation report with a final verdict.
+context: fork
+agent: Plan
 ---
 
 ## When to Apply This Skill

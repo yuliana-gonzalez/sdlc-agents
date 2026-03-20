@@ -5,6 +5,8 @@ description: >
   encoding strategy selection per column type and cardinality, scaling selection
   per distribution and algorithm, feature selection using filter, wrapper, and
   embedded methods. Produces a feature catalog and transformation pipeline.
+context: fork
+agent: Plan
 ---
 
 ## When to Apply This Skill

@@ -21,7 +21,7 @@
 | Output Cleanliness | 5% | | |
 | **Overall Health Score** | 100% | | **__%** |
 
-**Verdict:** [APPROVED (≥ 80%, zero CRITICAL) / APPROVED_WITH_NOTES (60–79% or any HIGH) / REQUIRES_REVISION (< 60% or any CRITICAL)]
+**Verdict:** [PASS (≥ 80%, zero CRITICAL) / WARN (60–79% or any HIGH) / FAIL (< 60% or any CRITICAL)]
 
 ---
 
@@ -102,7 +102,7 @@
 
 ## 8. Remediation Steps
 
-*(For APPROVED_WITH_NOTES and REQUIRES_REVISION — ordered by priority)*
+*(For WARN and FAIL verdicts — ordered by priority)*
 
 1. [CRITICAL] Cell N: [specific action]
 2. [HIGH] Cell N: [specific action]

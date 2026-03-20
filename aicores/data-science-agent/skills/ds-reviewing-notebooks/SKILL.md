@@ -5,6 +5,8 @@ description: >
   hidden state, hardcoded paths and credentials, reproducibility (seeds, pinned
   dependencies), documentation quality, and output cleanliness. Produces a
   notebook review report with scored dimensions and an actionable issue list.
+context: fork
+agent: Plan
 ---
 
 ## When to Apply This Skill
@@ -206,9 +208,9 @@ Fix: Restart → Run All before committing; or clear all outputs before committi
 | **Total** | 100% | | **__%** |
 
 **Verdict:**
-- ≥ 80% and zero CRITICAL → **APPROVED**
-- 60–79% or any HIGH → **APPROVED_WITH_NOTES**
-- < 60% or any CRITICAL → **REQUIRES_REVISION**
+- ≥ 80% and zero CRITICAL → **PASS**
+- 60–79% or any HIGH → **WARN**
+- < 60% or any CRITICAL → **FAIL**
 
 ---
 

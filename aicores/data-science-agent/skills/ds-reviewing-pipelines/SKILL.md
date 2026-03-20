@@ -5,6 +5,8 @@ description: >
   validation, reproducibility, idempotency, error handling, observability, and
   production readiness. Scores each dimension and produces a pipeline health
   report with prioritised remediation steps.
+context: fork
+agent: Plan
 ---
 
 ## When to Apply This Skill

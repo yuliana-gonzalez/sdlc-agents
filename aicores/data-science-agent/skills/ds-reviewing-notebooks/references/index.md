@@ -20,5 +20,6 @@ Defines quality standards for Jupyter and Colab notebooks:
 ---
 
 ## Who Reads This
-Every notebook review skill step and every ds-pipeline-review-agent invocation
-(when the input is a notebook) loads this index as its first action.
+Every notebook review skill step loads this index as its first action.
+ds-pipeline-review-agent loads it conditionally — only when the pipeline under
+review is a Jupyter or Colab notebook (Phase 6 of the pipeline review workflow).

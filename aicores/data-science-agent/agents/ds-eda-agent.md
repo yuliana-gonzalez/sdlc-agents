@@ -126,7 +126,7 @@ Before executing any workflow step, read and internalize this skill file:
 ---
 
 ## Handoff Rule
-On completion → findings in `eda_report.md` feed directly into **ds-feature-eng-agent**.
+On completion → findings in `eda_report.md` feed directly into **ds-feature-engineering-agent**.
 Pass the report and original dataset description when handing off.
 
 ---

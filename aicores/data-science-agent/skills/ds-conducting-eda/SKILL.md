@@ -5,6 +5,8 @@ description: >
   analysis, correlation detection, outlier identification, and class imbalance checks.
   Produces a reproducible EDA report with actionable findings and visualisation
   recommendations.
+context: fork
+agent: Plan
 ---
 
 ## When to Apply This Skill

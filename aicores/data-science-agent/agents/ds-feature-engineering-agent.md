@@ -1,5 +1,5 @@
 ---
-name: ds-feature-eng-agent
+name: ds-feature-engineering-agent
 description: >
   Reviews or designs a feature engineering strategy for any ML problem.
   Detects data leakage, recommends encoding and scaling approaches per column type,
